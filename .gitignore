@@ -8,6 +8,9 @@ pids
 *.pid
 *.seed
 
+# out
+out
+
 # dist
 main
 module
