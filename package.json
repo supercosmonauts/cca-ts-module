@@ -23,7 +23,7 @@
     "build": "npm run build:module && npm run build:main",
     "build:ts": "tsc --project ./tsconfig.json",
     "buidl": "npm run build && npm run build:ts",
-    "proto:gen": "cross-env NODE_ENV=development babel-node scripts/gen-proto.js",
+    "proto": "cross-env NODE_ENV=development babel-node scripts/gen-proto.js",
     "prepublish": "npm run build",
     "dev": "cross-env NODE_ENV=development babel-node src/index --extensions \".tsx,.ts,.js\"",
     "watch": "cross-env NODE_ENV=development babel-watch src/index --extensions \".tsx,.ts,.js\"",
@@ -68,7 +68,6 @@
     "prettier": "^2.1.2",
     "regenerator-runtime": "^0.13.7",
     "ts-jest": "^28.0.2",
-    "ts-proto": "^1.110.2",
     "typescript": "^4.6.2"
   },
   "dependencies": {
