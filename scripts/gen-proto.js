@@ -18,10 +18,10 @@ telescope({
       enabled: true
     },
     lcdClients: {
-      enabled: false
+      enabled: true
     },
     rpcClients: {
-      enabled: false,
+      enabled: true,
       camelCase: true
     }
   }
