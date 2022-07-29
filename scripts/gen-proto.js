@@ -8,13 +8,21 @@ telescope({
   protoDirs,
   outPath,
   options: {
-    includeAminos: true,
-    includeLCDClients: true,
-    includeRpcClients: true,
-    camelRpcMethods: true,
     includePackageVar: false,
-    useDate: 'date',
-    useDuration: 'duration',
-    useExact: false
+    typingsFormat: {
+      useExact: false,
+      date: 'date',
+      duration: 'duration'
+    },
+    aminoEncoding: {
+      enabled: true
+    },
+    lcdClients: {
+      enabled: false
+    },
+    rpcClients: {
+      enabled: false,
+      camelCase: true
+    }
   }
 });
